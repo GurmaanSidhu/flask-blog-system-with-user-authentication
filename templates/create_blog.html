@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    {% extends "base.html" %}
+
+    {% block title %} 
+        blog
+    {% endblock %}
+
+    {% block content %}
+
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card p-4 shadow">
+                <h3 class="mb-4">Create New Blog</h3>
+                <form method="POST">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" name="title" placeholder="Blog Title" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" name="content" rows="6" placeholder="Write your content here..." required></textarea>
+                    </div>
+                    <button class="btn btn-dark">Publish</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    {% endblock %}
+
+
+</body>
+</html>

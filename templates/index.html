@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body data-bs-theme="dark">
+    {% extends "base.html" %}
+
+    {% block title %} 
+        home
+    {% endblock %}
+
+    {% block content %}
+
+    <h2 class="mb-4 text-center text-dark fw-bold">All Blogs</h2>
+
+    <div class="row">
+        {% for blog in blogs %}
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm p-3">
+                    <h4>{{ blog.title }}</h4>
+                    <p class="text-muted">{{ blog.content[:150] }}...</p>
+                    <small class="text-secondary">By {{ blog.user.username }}</small>
+                </div>
+            </div>
+        {% else %}
+            <p class="text-center text-dark fs-5">Welcome to Pagger</p>
+        {% endfor %}
+    </div>
+
+    {% endblock %}
+
+
+</body>
+</html>
