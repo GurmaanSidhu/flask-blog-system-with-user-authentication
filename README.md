@@ -69,7 +69,7 @@ blog.db
 
 1. Clone the repository:
 
-git clone https://github.com/yourusername/pageer.git
+git clone [https://github.com/yourusername/pageer.git](https://github.com/GurmaanSidhu/flask-blog-system-with-user-authentication.git)
 
 2. Navigate into the folder:
 
@@ -102,3 +102,4 @@ http://127.0.0.1:5000/
 ## 📜 License
 
 This project is created for educational and portfolio purposes.
+
